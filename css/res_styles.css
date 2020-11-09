@@ -9,6 +9,35 @@ body {
   max-width: 11em;
 }
 
+.res_image img {
+  max-width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+section > p {
+  text-decoration: underline;
+}
+
+.menu {
+  display: inline;
+  padding-left: 1em;
+  border-radius: 20em;
+}
+
+.order {
+  border-style: solid;
+  text-align: left;
+  padding-left: 2em;
+}
+
+.menu > button {
+  max-width: 10em;
+  background-image: url("imagetick_circle.svg");
+  border-radius: 15em;
+}
+
 .footer_img {
   display: -webkit-box;
   display: -ms-flexbox;

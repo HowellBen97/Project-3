@@ -1,4 +1,7 @@
 $primary-color:#FF79DA;
+.center {
+    text-align: center;
+}
 body{
     background-color: white;
     text-align: center;
@@ -7,9 +10,11 @@ body{
 }
 .location{
     background-color:#bababa89;
-    max-width: 100%;
-    text-align: center;
-    display: flex;
+    width: 100%;
+    // text-align: center;
+}
+.location > *{
+    display: inline;
 }
 .location img{
     max-width: 1em;
@@ -26,28 +31,24 @@ body{
 .res{
     display: flex;
     background-size: cover;
-    text-align: center;
+    // text-align: center;
     max-width: 21em;
+    margin-left: 1em;
+    justify-content: center;
+    margin-bottom: 1em;
+    border-radius: 2em;
 }
 #res_1{
-    background-image: url("image/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
-    margin-left: 1em;
-    justify-content: center;
+    background-image: url("../image/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
 }
 #res_2{
-    background-image: url("image/stil-u2Lp8tXIcjw-unsplash.jpg");
-    margin-left: 1em;
-    justify-content: center;
+    background-image: url("../image/stil-u2Lp8tXIcjw-unsplash.jpg");
 }
 #res_3{
-    background-image: url("image/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
-    margin-left: 1em;
-    justify-content: center;
+    background-image: url("../image/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
 }
 #res_4{
-    background-image: url("image/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
-    margin-left: 1em;
-    justify-content: center;
+    background-image: url("../image/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
 }
 // .res_image img{
 //     width: 17em;
@@ -60,16 +61,13 @@ body{
     margin-top: 200px;
 }
 .footer_img{
-    display: flex;
+    display: inline;
 }
 footer{
     background-color: rgb(49, 49, 49);
     color: whitesmoke;
     line-height: 0em;
     text-align: left;
-    min-height:100vh;
-    padding-left: 1em;
-    padding-top: 1em;
 }
 
 footer img{
@@ -77,6 +75,7 @@ footer img{
 }
 .footer_img h5{
     padding-left: 0.5em;
+    display: inline;
 }
 h2{
     margin: 0em;
