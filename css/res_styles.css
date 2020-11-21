@@ -16,8 +16,8 @@ body {
   display: flex;
 }
 
-section > p {
-  text-decoration: underline;
+section > p > span {
+  border-bottom: 1em solid lightblue;
 }
 
 .menu {
