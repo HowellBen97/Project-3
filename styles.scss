@@ -17,7 +17,6 @@ body{
     width: 100%;
     padding-top: 0.5em;
     padding-bottom: 0.5em;
-    // text-align: center;
 }
 .location > *{
     display: inline;
@@ -29,7 +28,7 @@ body{
     max-width: 11em;
 }
 .booking{
-    background-color: rgb(224, 214, 65);
+    background-color: whitesmoke;
     padding-top: 1em;
     padding-bottom: 1em;
 }
@@ -44,7 +43,7 @@ body{
     max-width: 30em;
 }
 .how_to{
-    background-color: rgb(224, 214, 65);
+    background-color: whitesmoke;
     margin-top: 1em;
 }
 .how_to h2{
@@ -80,34 +79,31 @@ body{
 #rest_4{
     background-image: url("../image/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
 }
-// .res_image img{
-//     width: 17em;
-//     max-height: 200px;
-//     border-radius: 1em;
-// }
 .rest_caption{
     border-radius: 1em;
-    background-color: rgb(224, 214, 65);
+    background-color: white;
     margin-top: 200px;
     width: 100%;
     display: flex;
-    position: relative;
+    position: relative
 }
 .left{
     width: 70%;
     text-align: left;
+    background-color: rgba(245, 245, 245, 0.836);
 }
 .right{
     width: 30%;
+    background-color: rgba(245, 245, 245, 0.836);
     text-align: center;
     position: absolute;
     transform: translateY(-50%);
     top: 50%;
     right: 0;
 }
-// .rest_caption > h3,.rest_caption > p{
-//     width: 70%;
-// }
+.right > img{
+    max-width: 2em;
+}
 .footer_img{
     display: inline;
 }
@@ -120,6 +116,9 @@ footer{
 }
 .footer_list > li{
     list-style: none;
+}
+.footer_list > li > ul{
+    display: block;
 }
 footer img{
     max-width: 1em;
