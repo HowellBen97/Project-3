@@ -1,4 +1,5 @@
 $primary-color:#FF79DA;
+$background-2:rgb(211, 207, 207);
 .center {
     text-align: center;
 }
@@ -59,42 +60,50 @@ body{
     margin-left: 4em;
 }
 .rest{
-    display: flex;
+    // display: flex;
     background-size: cover;
-    max-width: 21em;
+    max-width: 20em;
     margin-left: 1em;
     justify-content: center;
     margin-bottom: 1em;
     border-radius: 2em;
 }
-#rest_1{
-    background-image: url("../image/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
-}
-#rest_2{
-    background-image: url("../image/stil-u2Lp8tXIcjw-unsplash.jpg");
-}
-#rest_3{
-    background-image: url("../image/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
-}
-#rest_4{
-    background-image: url("../image/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
-}
-.rest_caption{
-    border-radius: 1em;
-    background-color: white;
-    margin-top: 200px;
+.rest_image > img{
     width: 100%;
+    width: 320px;
+    height: 213px;
+    object-fit: cover;
+    object-position: 0% 60%;
+}
+// #rest_1{
+//     // background-image: url("../image/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+// }
+// #rest_2{
+//     background-image: url("../image/stil-u2Lp8tXIcjw-unsplash.jpg");
+// }
+// #rest_3{
+//     background-image: url("../image/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
+// }
+// #rest_4{
+//     background-image: url("../image/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
+// }
+.rest_caption{
+    border-radius: 0 0 1em 1em;
+    background-color: $background-2;
+    // margin top likely to change
+    margin-top: -5%;
+    padding-top: 0;
+    width: calc(100%);
     display: flex;
     position: relative
 }
 .left{
     width: 70%;
     text-align: left;
-    background-color: rgba(245, 245, 245, 0.836);
+    padding-left: 1%;
 }
 .right{
     width: 30%;
-    background-color: rgba(245, 245, 245, 0.836);
     text-align: center;
     position: absolute;
     transform: translateY(-50%);
