@@ -11,8 +11,16 @@ body {
     max-width: 100%;
     display: flex;
 }
+.rest_name{
+    text-align: left;
+    padding-left: 1em;
+}
 section > p > span {
     border-bottom: 1em solid lightblue; 
+}
+.listings > p {
+    text-align: left;
+    padding-left: 1em;
 }
 .menu {
     display: inline;
@@ -23,14 +31,27 @@ section > p > span {
     border-style: solid;
     text-align: left;
     padding-left: 2em;
+    border-radius: 15px;
 }
 .menu > button {
     max-width: 10em;
     background-image: url("image\tick_circle.svg");
     border-radius: 15em;
 }
-.footer_img {
-    display: flex;
+// doesn't align heart
+.right{
+    width: 30%;
+    text-align: center;
+    position: absolute;
+    transform: translateY(80%);
+    top: 50%;
+    right: 0;
+}
+.right > img{
+    max-width: 2em;
+}
+.footer_img{
+    display: inline;
 }
 footer {
     background-color: rgb(49, 49, 49);
@@ -44,6 +65,19 @@ footer {
 .logo>img {
     max-width: 11em;
 }
+.footer_list > li{
+    list-style: none;
+}
+.footer_list > li > ul{
+    display: block;
+}
 footer img {
     max-width: 1em;
+}
+.footer_img h5{
+    padding-left: 0.5em;
+    display: inline;
+}
+footer > .logo{
+    padding-left: 0.5em;
 }

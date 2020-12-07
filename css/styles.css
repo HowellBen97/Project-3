@@ -69,6 +69,10 @@ body {
   margin-left: 4em;
 }
 
+.middle {
+  padding-left: 0.5em;
+}
+
 .rest {
   background-size: cover;
   max-width: 20em;
@@ -82,7 +86,6 @@ body {
 
 .rest_image > img {
   width: 100%;
-  width: 320px;
   height: 213px;
   -o-object-fit: cover;
      object-fit: cover;
@@ -129,9 +132,11 @@ body {
 footer {
   background-color: #313131;
   color: whitesmoke;
-  line-height: 0em;
+  line-height: 0.5em;
   text-align: left;
-  max-height: 100vh;
+  min-height: 100vh;
+  padding-left: 1em;
+  padding-top: 1em;
 }
 
 .footer_list > li {
@@ -153,5 +158,9 @@ footer img {
 
 h2 {
   margin: 0em;
+}
+
+footer > .logo {
+  padding-left: 0.5em;
 }
 /*# sourceMappingURL=styles.css.map */
