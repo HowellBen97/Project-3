@@ -19,12 +19,13 @@ body {
   width: 100%;
   padding-top: 0.5em;
   padding-bottom: 0.5em;
+  margin: auto;
 }
 .location > * {
   display: inline;
 }
 .location img {
-  max-width: 1em;
+  max-width: 0.7em;
 }
 .logo > img {
   max-width: 11em;
@@ -33,12 +34,13 @@ body {
   background-color: whitesmoke;
   padding-top: 1em;
   padding-bottom: 1em;
+  margin-bottom: 2em;
 }
 .booking h2 {
   text-align: center;
 }
 .explore {
-  background-color: #9356dc;
+  background-image: linear-gradient(70deg, #ff79da, #9356dc);
   border: 1px solid transparent;
   color: white;
   padding: 1em 1em;
@@ -50,6 +52,9 @@ body {
 .how_to {
   background-color: whitesmoke;
   margin-top: 1em;
+  // text-align: center;
+  // justify-content: center;
+  // display: block;
 }
 .how_to h2 {
   text-align: left;
@@ -57,18 +62,28 @@ body {
 }
 .how_to h4 {
   border-radius: 20px;
-  border-style: solid;
   font-size: 1em;
-  max-width: 60%;
-  padding: 0.6em 0.6em;
-  margin-left: 4em;
+  width: 80%;
+  padding: 0.6em;
+  margin: 1em 2em;
   display: flex;
+  background-color: lightgray;
 }
 .how_to img {
   max-width: 0.75em;
   padding-right: 1em;
 }
+.how_to span {
+  transform: translateX(-1.2em);
+  background-color: #9356dc;
+  border-radius: 75px;
+  // padding: 0.1em 0.2em;
+  color: white;
+  height: 25px;
+  width: 25px;
+}
 .middle {
+  padding-top: 5em;
   padding-left: 0.5em;
 }
 .rest {
@@ -80,12 +95,36 @@ body {
   margin-bottom: 1em;
   border-radius: 2em;
 }
-.rest_image > img {
-  width: 100%;
-  height: 213px;
-  object-fit: cover;
-  object-position: 0% 60%;
-  border-radius: 10% 10% 0 0;
+// .rest_image > img {
+//   width: 100%;
+//   height: 213px;
+//   object-fit: cover;
+//   object-position: 0% 60%;
+//   border-radius: 10% 10% 0 0;
+// }
+// .rest_image > div {
+//   position: absolute;
+//   color: red;
+//   background-color: yellow;
+//   right: 3em;
+//   margin-top: 1em;
+// }
+.rest_image {
+  > img {
+    width: 100%;
+    height: 213px;
+    object-fit: cover;
+    object-position: 0% 60%;
+    border-radius: 10% 10% 0 0;
+  }
+  > div {
+    position: absolute;
+    color: rgb(30, 152, 122);
+    background-color: rgb(153, 226, 208);
+    right: 3em;
+    margin-top: 1em;
+    padding: 0.15em 1em;
+  }
 }
 .rest_caption {
   border-radius: 0 0 1em 1em;
@@ -110,6 +149,9 @@ body {
   top: 50%;
   right: 0;
 }
+.right:hover {
+  background-image: linear-gradient(70deg, #ff79da, #9356dc);
+}
 .right > img {
   max-width: 2em;
 }
@@ -129,9 +171,13 @@ footer {
 }
 .footer_list > li > ul {
   display: block;
+  padding-left: 0;
 }
 footer img {
   max-width: 1em;
+}
+.footer_img {
+  padding: 0;
 }
 .footer_img h5 {
   padding-left: 0.5em;

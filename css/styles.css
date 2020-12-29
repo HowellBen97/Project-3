@@ -19,6 +19,7 @@ body {
   width: 100%;
   padding-top: 0.5em;
   padding-bottom: 0.5em;
+  margin: auto;
 }
 
 .location > * {
@@ -26,7 +27,7 @@ body {
 }
 
 .location img {
-  max-width: 1em;
+  max-width: 0.7em;
 }
 
 .logo > img {
@@ -37,6 +38,7 @@ body {
   background-color: whitesmoke;
   padding-top: 1em;
   padding-bottom: 1em;
+  margin-bottom: 2em;
 }
 
 .booking h2 {
@@ -44,7 +46,7 @@ body {
 }
 
 .explore {
-  background-color: #9356dc;
+  background-image: linear-gradient(70deg, #ff79da, #9356dc);
   border: 1px solid transparent;
   color: white;
   padding: 1em 1em;
@@ -66,14 +68,14 @@ body {
 
 .how_to h4 {
   border-radius: 20px;
-  border-style: solid;
   font-size: 1em;
-  max-width: 60%;
-  padding: 0.6em 0.6em;
-  margin-left: 4em;
+  width: 80%;
+  padding: 0.6em;
+  margin: 1em 2em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  background-color: lightgray;
 }
 
 .how_to img {
@@ -81,7 +83,18 @@ body {
   padding-right: 1em;
 }
 
+.how_to span {
+  -webkit-transform: translateX(-1.2em);
+          transform: translateX(-1.2em);
+  background-color: #9356dc;
+  border-radius: 75px;
+  color: white;
+  height: 25px;
+  width: 25px;
+}
+
 .middle {
+  padding-top: 5em;
   padding-left: 0.5em;
 }
 
@@ -104,6 +117,15 @@ body {
   -o-object-position: 0% 60%;
      object-position: 0% 60%;
   border-radius: 10% 10% 0 0;
+}
+
+.rest_image > div {
+  position: absolute;
+  color: #1e987a;
+  background-color: #99e2d0;
+  right: 3em;
+  margin-top: 1em;
+  padding: 0.15em 1em;
 }
 
 .rest_caption {
@@ -134,6 +156,10 @@ body {
   right: 0;
 }
 
+.right:hover {
+  background-image: linear-gradient(70deg, #ff79da, #9356dc);
+}
+
 .right > img {
   max-width: 2em;
 }
@@ -157,10 +183,15 @@ footer {
 
 .footer_list > li > ul {
   display: block;
+  padding-left: 0;
 }
 
 footer img {
   max-width: 1em;
+}
+
+.footer_img {
+  padding: 0;
 }
 
 .footer_img h5 {
