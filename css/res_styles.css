@@ -10,6 +10,7 @@ body {
   -webkit-transform: translate(0, -40px);
           transform: translate(0, -40px);
   background-color: white;
+  padding-top: 2em;
 }
 
 .logo > img {
@@ -32,10 +33,14 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 80%;
 }
 
 .title_right > img {
-  width: 1.5em;
+  width: 1.7em;
 }
 
 section > p > span {

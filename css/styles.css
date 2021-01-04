@@ -87,7 +87,7 @@ body {
   -webkit-transform: translateX(-1.2em);
           transform: translateX(-1.2em);
   background-color: #9356dc;
-  border-radius: 75px;
+  border-radius: 50%;
   color: white;
   height: 25px;
   width: 25px;
@@ -156,12 +156,56 @@ body {
   right: 0;
 }
 
-.right:hover {
-  background-image: linear-gradient(70deg, #ff79da, #9356dc);
-}
-
 .right > img {
   max-width: 2em;
+}
+
+.heart_icon {
+  fill: transparent;
+  stroke: black;
+  stroke-width: 25px;
+  max-width: 2em;
+  margin: 0;
+  padding: 0;
+  -webkit-transition: color .2s ease-out;
+  transition: color .2s ease-out;
+}
+
+.heart_icon:hover {
+  -webkit-animation: col 3s linear;
+          animation: col 3s linear;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes col {
+  0%, 25% {
+    fill: lightblue;
+  }
+  25%, 50% {
+    fill: blue;
+  }
+  50%, 75% {
+    fill: blue;
+  }
+  75%, 100% {
+    fill: blue;
+  }
+}
+
+@keyframes col {
+  0%, 25% {
+    fill: lightblue;
+  }
+  25%, 50% {
+    fill: blue;
+  }
+  50%, 75% {
+    fill: blue;
+  }
+  75%, 100% {
+    fill: blue;
+  }
 }
 
 .footer_img {
