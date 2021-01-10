@@ -93,6 +93,7 @@ body {
   justify-content: center;
   margin-bottom: 1em;
   border-radius: 2em;
+  position: relative;
 }
 // .rest_image > img {
 //   width: 100%;
@@ -139,6 +140,14 @@ body {
   width: 70%;
   text-align: left;
   padding-left: 1%;
+  line-height: 0.8em;
+}
+.left {
+> h3 {
+  padding-left: 0.5em;}
+> p {
+  padding-left: 0.5em;
+}
 }
 .right {
   width: 30%;
@@ -161,7 +170,7 @@ body {
   max-width: 2em;
   margin: 0;
   padding: 0;
-  transition:color .2s ease-out;  
+  // transition:color 1s ease-out;  
 }
 .heart_icon:hover{
   // fill: blue;
@@ -171,6 +180,7 @@ body {
     25%,50%{fill:blue}
     50%,75%{fill:blue}
     75%,100%{fill:blue}
+    100%, 0%{fill:transparent}
   }
   animation-fill-mode: forwards;
 }
@@ -221,4 +231,26 @@ h2 {
 footer > .logo {
   padding-left: 0.5em;
 }
+.tablet-bottom{
+  display: none;
+}
 // change h1-h6 font family
+@media only screen and (min-width:750px)and(max-width:1200px){
+  h2{
+    text-align: center;
+  }
+  .how_to{
+    text-align: -webkit-center;
+  }
+.rest{
+  margin: 0em;
+}
+  .middle{
+  padding: 0em;
+  margin: 1em;
+  display:inline-grid;
+  grid-template-columns: auto auto;
+  column-gap:15px;
+  row-gap: 15px;
+  }
+}
