@@ -54,8 +54,7 @@ section > p > span {
 
 .menu {
   border-radius: 20em;
-  display: -ms-grid;
-  display: grid;
+  display: inline;
   -ms-grid-columns: auto auto;
       grid-template-columns: auto auto;
   -ms-grid-rows: auto auto auto;
@@ -70,18 +69,8 @@ section > p > span {
   padding-left: 2em;
   border-radius: 20px;
   line-height: 0;
-  max-width: 100%;
-}
-
-.order_right {
-  text-align: right;
-  border-style: solid;
-  width: 2em;
-  display: none;
-}
-
-.order_right > img {
-  width: 2em;
+  max-width: 85%;
+  margin: 1em;
 }
 
 .right {

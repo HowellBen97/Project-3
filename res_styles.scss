@@ -42,7 +42,7 @@ section > p > span {
 .menu {
     // padding-left: 1em;
     border-radius: 20em;
-    display: grid;
+    display: inline;
     grid-template-columns: auto auto;
     grid-template-rows: auto auto auto;
     max-width: 85%;
@@ -54,22 +54,9 @@ section > p > span {
     padding-left: 2em;
     border-radius: 20px;
     line-height: 0;
-    max-width: 100%;
+    max-width: 85%;
+    margin:1em;
 }
-.order_right{
-    text-align: right;
-    border-style: solid;
-    width: 2em;
-    display: none;
-}
-.order_right >img{
-    width: 2em;
-}
-// .menu > button {
-//     max-width: 10em;
-//     background-image: url("image\tick_circle.svg");
-//     border-radius: 15em;
-// }
 // doesn't align heart
 .right{
     width: 30%;

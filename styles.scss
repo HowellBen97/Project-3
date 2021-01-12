@@ -143,11 +143,12 @@ body {
   line-height: 0.8em;
 }
 .left {
-> h3 {
-  padding-left: 0.5em;}
-> p {
-  padding-left: 0.5em;
-}
+  > h3 {
+    padding-left: 0.5em;
+  }
+  > p {
+    padding-left: 0.5em;
+  }
 }
 .right {
   width: 30%;
@@ -157,30 +158,42 @@ body {
   top: 50%;
   right: 0;
 }
-.right:hover {
-  // fill: linear-gradient(70deg, #ff79da, #9356dc);
-}
 .right > img {
   max-width: 2em;
 }
-.heart_icon{
+.heart_icon {
   fill: transparent;
   stroke: black;
   stroke-width: 25px;
   max-width: 2em;
   margin: 0;
   padding: 0;
-  // transition:color 1s ease-out;  
+  // transition:color 1s ease-out;
 }
-.heart_icon:hover{
+.heart_icon:hover {
   // fill: blue;
   animation: col 3s linear;
-  @keyframes col{
-    0%,25% {fill:lightblue}
-    25%,50%{fill:blue}
-    50%,75%{fill:blue}
-    75%,100%{fill:blue}
-    100%, 0%{fill:transparent}
+  @keyframes col {
+    0%,
+    25% {
+      fill: lightblue;
+    }
+    25%,
+    50% {
+      fill: blue;
+    }
+    50%,
+    75% {
+      fill: blue;
+    }
+    75%,
+    100% {
+      fill: blue;
+    }
+    100%,
+    0% {
+      fill: transparent;
+    }
   }
   animation-fill-mode: forwards;
 }
@@ -231,26 +244,44 @@ h2 {
 footer > .logo {
   padding-left: 0.5em;
 }
-.tablet-bottom{
+.tablet-bottom {
   display: none;
 }
 // change h1-h6 font family
-@media only screen and (min-width:750px)and(max-width:1200px){
-  h2{
+@media screen and (min-width: 1201px) {
+  .middle {
+    padding: 0em;
+    margin: 1em;
+    display: inline-grid;
+    grid-template-columns: auto auto;
+    column-gap: 25px;
+    row-gap: 25px;
+  }
+  h2 {
     text-align: center;
   }
-  .how_to{
+  .how_to h4 {
+    text-align: center;
+    width: 55% !important;
+    margin: 1em 8em;
+  }
+}
+@media screen and (min-width: 750px){
+  h2 {
+    text-align: center;
+  }
+  .how_to {
     text-align: -webkit-center;
   }
-.rest{
-  margin: 0em;
-}
-  .middle{
-  padding: 0em;
-  margin: 1em;
-  display:inline-grid;
-  grid-template-columns: auto auto;
-  column-gap:15px;
-  row-gap: 15px;
+  .rest {
+    margin: 0em;
+  }
+  .middle {
+    padding: 0em;
+    margin: 1em;
+    display: inline-grid;
+    grid-template-columns: auto auto;
+    column-gap: 15px;
+    row-gap: 15px;
   }
 }
