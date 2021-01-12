@@ -40,9 +40,13 @@ section > p > span {
     padding-left: 1em;
 }
 .menu {
-    display: inline;
-    padding-left: 1em;
+    // padding-left: 1em;
     border-radius: 20em;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto;
+    max-width: 85%;
+    margin: 0em;
 }
 .order {
     border-style: solid;
@@ -50,12 +54,22 @@ section > p > span {
     padding-left: 2em;
     border-radius: 20px;
     line-height: 0;
+    max-width: 100%;
 }
-.menu > button {
-    max-width: 10em;
-    background-image: url("image\tick_circle.svg");
-    border-radius: 15em;
+.order_right{
+    text-align: right;
+    border-style: solid;
+    width: 2em;
+    display: none;
 }
+.order_right >img{
+    width: 2em;
+}
+// .menu > button {
+//     max-width: 10em;
+//     background-image: url("image\tick_circle.svg");
+//     border-radius: 15em;
+// }
 // doesn't align heart
 .right{
     width: 30%;

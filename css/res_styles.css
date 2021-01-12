@@ -53,9 +53,15 @@ section > p > span {
 }
 
 .menu {
-  display: inline;
-  padding-left: 1em;
   border-radius: 20em;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
+  -ms-grid-rows: auto auto auto;
+      grid-template-rows: auto auto auto;
+  max-width: 85%;
+  margin: 0em;
 }
 
 .order {
@@ -64,12 +70,18 @@ section > p > span {
   padding-left: 2em;
   border-radius: 20px;
   line-height: 0;
+  max-width: 100%;
 }
 
-.menu > button {
-  max-width: 10em;
-  background-image: url("imagetick_circle.svg");
-  border-radius: 15em;
+.order_right {
+  text-align: right;
+  border-style: solid;
+  width: 2em;
+  display: none;
+}
+
+.order_right > img {
+  width: 2em;
 }
 
 .right {
