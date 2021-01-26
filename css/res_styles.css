@@ -2,7 +2,7 @@ body {
   background-color: white;
   text-align: center;
   margin: 0%;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 .main_body {
@@ -39,8 +39,9 @@ body {
   width: 80%;
 }
 
-.title_right > img {
+.title_right > svg {
   width: 1.7em;
+  position: absolute;
 }
 
 section > p > span {
@@ -71,6 +72,26 @@ section > p > span {
   line-height: 0;
   max-width: 85%;
   margin: 1em;
+}
+
+.order {
+  position: relative;
+  overflow: hidden;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.order:after {
+  width: 0;
+  position: absolute;
+  background-color: deeppink;
+  left: 100%;
+  z-index: -1;
+}
+
+.order:after:hover:after {
+  left: 70%;
+  width: 100%;
 }
 
 .right {
@@ -124,5 +145,36 @@ footer img {
 
 footer > .logo {
   padding-left: 0.5em;
+}
+
+@media screen and (min-width: 1200px) {
+  .logo > img {
+    max-width: 15em;
+  }
+  body {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  .how_to {
+    text-align: -webkit-center;
+  }
+  .res_image img {
+    border-radius: 50px 50px 0 0;
+  }
+  .order {
+    max-width: 100%;
+  }
+  footer {
+    border-radius: 25px 25px 0 0;
+  }
+}
+
+@media screen and (min-width: 750px) and (max-width: 1200px) {
+  .listings {
+    margin-left: 1em;
+  }
+  footer {
+    border-radius: 25px 25px 0 0;
+  }
 }
 /*# sourceMappingURL=res_styles.css.map */

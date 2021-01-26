@@ -281,34 +281,42 @@ footer > .logo {
   display: none;
 }
 
-@media screen and (min-width: 1201px) {
+@media screen and (min-width: 1200px) {
   .middle {
     padding: 0em;
-    margin: 1em;
+    margin: 0.5em 0 0 0;
     display: -ms-inline-grid;
     display: inline-grid;
     -ms-grid-columns: auto auto;
         grid-template-columns: auto auto;
     -webkit-column-gap: 25px;
             column-gap: 25px;
-    row-gap: 25px;
+    row-gap: 15px;
   }
   h2 {
     text-align: center;
   }
   .how_to h4 {
     text-align: center;
-    width: 55% !important;
+    width: 55%;
     margin: 1em 8em;
+  }
+  .how_to {
+    text-align: -webkit-center;
   }
 }
 
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 750px) and (max-width: 1200px) {
   h2 {
     text-align: center;
   }
   .how_to {
     text-align: -webkit-center;
+  }
+  .how_to h4 {
+    text-align: center;
+    width: 55%;
+    margin: 1em 8em;
   }
   .rest {
     margin: 0em;
