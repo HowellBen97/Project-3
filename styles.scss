@@ -143,50 +143,60 @@ body {
 .right > img {
   max-width: 2em;
 }
-.heart_icon {
-  fill: transparent;
-  stroke: black;
-  stroke-width: 25px;
-  max-width: 2em;
-  margin: 0;
-  padding: 0;
-  // transition:color 1s ease-out;
-}
-.heart_icon:hover {
-  // fill: blue;
-  animation: col 3s linear;
-  @keyframes col {
-    0%,
-    25% {
-      fill: lightblue;
-    }
-    25%,
-    50% {
-      fill: blue;
-    }
-    50%,
-    75% {
-      fill: blue;
-    }
-    75%,
-    100% {
-      fill: blue;
-    }
-    100%,
-    0% {
-      fill: transparent;
-    }
-  }
-  animation-fill-mode: forwards;
-}
-// my though here is to make it so it fades out of color as well as fades in.
-// .heart_icon{
+// im a bit confused on how to fix this
+// .heart_icon {
+//   fill: transparent;
+//   stroke: black;
+//   stroke-width: 25px;
+//   max-width: 2em;
+//   margin: 0;
+//   padding: 0;
+// }
+.heart_icon{
+	overflow:hidden;
+	background-color: white;
+	position: relative;
+	max-width: 2em;
+	fill: transparent;
+.heart_icon::before{
+	// content:"";
+	position:absolute;
+	animation-fill-mode:forward;
+	background: lightblue;
+	animation: wipe 5s cubic-bezier(.2,.6,.8,.4) forwards;
+	}
+	@keyframes col{
+	0% {
+		height: 0;
+		}
+		100% {
+		height: 100%;
+		}
+	}
+// .heart_icon:hover {
+//   // fill: blue;
 //   animation: col 3s linear;
-//   @keyframes col{
-//     100%,75% {fill:blue}
-//     75%,50%{fill:blue}
-//     50%,25%{fill:lightblue}
-//     25%,0%{fill:transparent}
+//   @keyframes col {
+//     0%,
+//     25% {
+//       fill: lightblue;
+//     }
+//     25%,
+//     50% {
+//       fill: blue;
+//     }
+//     50%,
+//     75% {
+//       fill: blue;
+//     }
+//     75%,
+//     100% {
+//       fill: blue;
+//     }
+//     100%,
+//     0% {
+//       fill: transparent;
+//     }
 //   }
 //   animation-fill-mode: forwards;
 // }

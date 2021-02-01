@@ -48,6 +48,33 @@ section > p > span {
   max-width: 85%;
   margin: 0em;
 }
+// .order {
+//   border-style: solid;
+//   text-align: left;
+//   padding-left: 2em;
+//   border-radius: 20px;
+//   line-height: 0;
+//   max-width: 85%;
+//   margin: 1em;
+// }
+// .order {
+//   position: relative;
+//   overflow: hidden;
+//   transition: 0.3s;
+//   &:after {
+//     width: 0;
+//     position: absolute;
+//     background-color: deeppink;
+//     left: 100%;
+//     z-index: -1;
+//     &:hover {
+//       &:after {
+//         left: 70%;
+//         width: 100%;
+//       }
+//     }
+//   }
+// }
 .order {
   border-style: solid;
   text-align: left;
@@ -56,25 +83,30 @@ section > p > span {
   line-height: 0;
   max-width: 85%;
   margin: 1em;
-}
-.order {
   position: relative;
   overflow: hidden;
   transition: 0.3s;
   &:after {
     width: 0;
+    height: 100%;
     position: absolute;
-    background-color: deeppink;
+    background: lightblue;
     left: 100%;
     z-index: -1;
-    &:hover {
-      &:after {
-        left: 70%;
-        width: 100%;
-      }
+    content: "";
+    transition: 0.3s;
+  }
+  &:hover {
+    &:after {
+      left: 70%;
+      width: 100%;
     }
   }
 }
+.order > * {
+  display: inline-block;
+  }
+  
 .right {
   width: 30%;
   text-align: center;

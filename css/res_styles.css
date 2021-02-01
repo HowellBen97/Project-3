@@ -72,9 +72,6 @@ section > p > span {
   line-height: 0;
   max-width: 85%;
   margin: 1em;
-}
-
-.order {
   position: relative;
   overflow: hidden;
   -webkit-transition: 0.3s;
@@ -83,15 +80,23 @@ section > p > span {
 
 .order:after {
   width: 0;
+  height: 100%;
   position: absolute;
-  background-color: deeppink;
+  background: lightblue;
   left: 100%;
   z-index: -1;
+  content: "";
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
-.order:after:hover:after {
+.order:hover:after {
   left: 70%;
   width: 100%;
+}
+
+.order > * {
+  display: inline-block;
 }
 
 .right {
