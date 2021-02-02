@@ -85,9 +85,10 @@ section > p > span {
   background: lightblue;
   left: 100%;
   z-index: -1;
-  content: "";
+  content: url(../image/check-circle-solid.svg);
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  max-height: 1em;
 }
 
 .order:hover:after {
@@ -182,4 +183,3 @@ footer > .logo {
     border-radius: 25px 25px 0 0;
   }
 }
-/*# sourceMappingURL=res_styles.css.map */
