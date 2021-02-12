@@ -68,19 +68,23 @@ section > p > span {
     z-index: -1;
     content: url(../image/check-circle-solid.svg);
     transition: 0.3s;
-    max-height: 1em;
+  }
+  & > div:hover {
+    width: 70%;
   }
   &:hover {
     &:after {
       left: 70%;
       width: 100%;
+      height: 100%;
+      // width: 1em;
     }
   }
 }
 .order > * {
   display: inline-block;
-  }
-  
+}
+
 .right {
   width: 30%;
   text-align: center;
