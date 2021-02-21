@@ -157,74 +157,33 @@ body {
 }
 
 .right {
-  width: 30%;
+  width: 15%;
   text-align: center;
   position: absolute;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   top: 50%;
   right: 0;
+  padding-right: 1em;
 }
 
 .right > img {
   max-width: 2em;
 }
 
-.heart_icon::before {
-  content: "";
-  position: absolute;
-  -webkit-animation-fill-mode: forward;
-          animation-fill-mode: forward;
-  -webkit-animation: wipe 5s cubic-bezier(0.2, 0.6, 0.8, 0.4) forwards;
-          animation: wipe 5s cubic-bezier(0.2, 0.6, 0.8, 0.4) forwards;
-}
-
-@-webkit-keyframes col {
-  0% {
-    height: 0;
-  }
-  100% {
-    height: 100%;
-  }
-}
-
-@keyframes col {
-  0% {
-    height: 0;
-  }
-  100% {
-    height: 100%;
-  }
+.heart_icon {
+  fill: transparent;
+  stroke: black;
+  stroke-width: 25px;
+  max-width: 2em;
+  margin: 0;
+  padding: 0;
 }
 
 .heart_icon:hover {
-  -webkit-animation: col 3s linear;
-          animation: col 3s linear;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-}
-
-@keyframes col {
-  0%,
-  25% {
-    fill: lightblue;
-  }
-  25%,
-  50% {
-    fill: blue;
-  }
-  50%,
-  75% {
-    fill: blue;
-  }
-  75%,
-  100% {
-    fill: blue;
-  }
-  100%,
-  0% {
-    fill: transparent;
-  }
+  fill: #ff79da;
+  -webkit-transition: 1s all ease-in-out;
+  transition: 1s all ease-in-out;
 }
 
 .footer_img {
