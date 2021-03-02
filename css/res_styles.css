@@ -13,6 +13,22 @@ body {
   padding-top: 2em;
 }
 
+.page_back {
+  position: absolute;
+  left: 1%;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 2em;
+  display: inline-block;
+  text-align: left;
+  margin: 0 auto;
+}
+
+.logo {
+  position: relative;
+}
+
 .logo > img {
   max-width: 11em;
 }
@@ -56,60 +72,30 @@ section > p > span {
 .menu {
   border-radius: 20em;
   display: inline;
-  -ms-grid-columns: auto auto;
-      grid-template-columns: auto auto;
-  -ms-grid-rows: auto auto auto;
-      grid-template-rows: auto auto auto;
   max-width: 85%;
   margin: 0em;
+  overflow: hidden;
 }
 
 .order {
   border-style: solid;
-  text-align: left;
-  padding-left: 2em;
+  text-align: center;
   border-radius: 20px;
   line-height: 0;
-  max-width: 85%;
   margin: 1em;
   position: relative;
   overflow: hidden;
   -webkit-transition: 0.3s;
   transition: 0.3s;
-}
-
-.order:after {
-  right: 0;
-  height: 100%;
-  position: absolute;
   background: lightblue;
-  left: 100%;
-  text-align: center;
-  z-index: -1;
-  content: url(../image/check-circle-solid.svg);
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
+  width: 100%;
+  word-wrap: break-word;
 }
 
-.order > div h4,
-.order > div p {
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
-}
-
-.order > div:hover {
-  width: 70%;
-}
-
-.order:hover {
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-}
-
-.order:hover:after {
-  left: 70%;
-  height: 100%;
+.check {
+  background: red;
+  right: 0;
+  padding: 2% 4%;
 }
 
 .order > * {
@@ -169,25 +155,46 @@ footer > .logo {
   padding-left: 0.5em;
 }
 
+footer {
+  max-width: 100%;
+}
+
 @media screen and (min-width: 1200px) {
   .logo > img {
     max-width: 15em;
   }
-  body {
-    padding-left: 5%;
-    padding-right: 5%;
+  .menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .listings {
+    display: -ms-inline-grid;
+    display: inline-grid;
+    -ms-grid-columns: auto auto auto;
+        grid-template-columns: auto auto auto;
+    -ms-grid-rows: auto auto;
+        grid-template-rows: auto auto;
+  }
+  button {
+    display: block;
+    margin: 0 auto;
   }
   .how_to {
     text-align: -webkit-center;
   }
-  .res_image img {
-    border-radius: 50px 50px 0 0;
+  .res_image > img {
+    overflow: hidden;
+    -o-object-fit: cover;
+       object-fit: cover;
+    max-height: 30em;
+    width: 100%;
   }
-  .order {
-    max-width: 100%;
-  }
-  footer {
-    border-radius: 25px 25px 0 0;
+  .box {
+    border-style: solid;
+    width: 20px;
+    height: 20px;
+    text-align: right;
   }
 }
 
@@ -195,7 +202,7 @@ footer > .logo {
   .listings {
     margin-left: 1em;
   }
-  footer {
-    border-radius: 25px 25px 0 0;
+  .order {
+    width: 85%;
   }
 }

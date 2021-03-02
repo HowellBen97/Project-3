@@ -1,0 +1,36 @@
+.menu {
+  width: 200px;
+  border: 5px solid black;
+  display: flex;
+  height: 100px;
+  overflow: hidden;
+}
+.order {
+  background: lightblue;
+  width: 100%;
+  word-wrap: break-word;
+}
+.check {
+  background: red;
+  right: 0;
+  padding: 2% 4%;
+}
+.menu:hover > .order {
+  width: 100%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.menu:hover > .check {
+  animation: slide_left 2s infinite;
+}
+.parent:hover {
+}
+@keyframes slide_left {
+  0% {
+    left: 100%;
+  }
+  100% {
+    left: 70%;
+  }
+}

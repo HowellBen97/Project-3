@@ -111,7 +111,6 @@ body {
 .rest_caption {
   border-radius: 0 0 1em 1em;
   background-color: $background-2;
-  // margin top likely to change
   margin-top: -5%;
   padding-top: 0;
   width: calc(100%);
@@ -144,7 +143,6 @@ body {
 .right > img {
   max-width: 2em;
 }
-// im a bit confused on how to fix this
 .heart_icon {
   fill: transparent;
   stroke: black;
@@ -153,22 +151,9 @@ body {
   margin: 0;
   padding: 0;
 }
-.heart_icon::before {
-  // position: absolute;
-  // animation: wipe 5s cubic-bezier(0.2, 0.6, 0.8, 0.4) forwards;
-  // transition: 0.3s;
-}
 .heart_icon:hover {
   fill: $primary-color;
   transition: 1s all ease-in-out;
-  // animation: col 3s linear;
-  // @keyframes col {
-  //   0%,
-  //   100% {
-  //     fill: $primary-color;
-  //   }
-  // }
-  // animation-fill-mode: forwards;
 }
 .footer_img {
   display: inline;
