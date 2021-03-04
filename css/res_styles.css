@@ -71,7 +71,9 @@ section > p > span {
 
 .menu {
   border-radius: 20em;
-  display: inline;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   max-width: 85%;
   margin: 0em;
   overflow: hidden;
@@ -96,6 +98,36 @@ section > p > span {
   background: red;
   right: 0;
   padding: 2% 4%;
+}
+
+.menu:hover > .order {
+  width: 100%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.menu:hover > .check {
+  -webkit-animation: slide_left 2s infinite;
+          animation: slide_left 2s infinite;
+}
+
+@-webkit-keyframes slide_left {
+  0% {
+    left: 100%;
+  }
+  100% {
+    left: 70%;
+  }
+}
+
+@keyframes slide_left {
+  0% {
+    left: 100%;
+  }
+  100% {
+    left: 70%;
+  }
 }
 
 .order > * {
