@@ -70,46 +70,75 @@ section > p > span {
 }
 
 .menu {
-  border-radius: 20em;
+  width: 200px;
+  border: 5px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  max-width: 85%;
-  margin: 0em;
+  height: 100px;
   overflow: hidden;
+  position: relative;
+  border-radius: 10px;
+  -webkit-transform: translateX(15%);
+          transform: translateX(15%);
+  -webkit-box-shadow: 3px 3px 5px 0px black;
+          box-shadow: 3px 3px 5px 0px black;
+  margin-bottom: 1em;
+  line-height: 1;
 }
 
 .order {
-  border-style: solid;
-  text-align: center;
-  border-radius: 20px;
-  line-height: 0;
-  margin: 1em;
-  position: relative;
-  overflow: hidden;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-  background: lightblue;
+  background: whitesmoke;
   width: 100%;
   word-wrap: break-word;
 }
 
+.order > h4 {
+  margin-bottom: 0.3em;
+}
+
+.order > p {
+  margin-top: 0.3em;
+}
+
 .check {
-  background: red;
+  background: #bcdffd;
   right: 0;
-  padding: 2% 4%;
+  height: 100%;
+  position: absolute;
+  left: 100%;
+}
+
+.check > img {
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  position: relative;
+  top: 50%;
+}
+
+.check:hover > img {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  -webkit-transition: 2s;
+  transition: 2s;
 }
 
 .menu:hover > .order {
-  width: 100%;
+  width: 70%;
+  -webkit-transition: 2s;
+  transition: 2s;
+}
+
+.menu:hover > .order > * {
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
 }
 
 .menu:hover > .check {
-  -webkit-animation: slide_left 2s infinite;
-          animation: slide_left 2s infinite;
+  -webkit-animation: slide_left 2s;
+          animation: slide_left 2s;
+  left: 70%;
 }
 
 @-webkit-keyframes slide_left {
@@ -128,10 +157,6 @@ section > p > span {
   100% {
     left: 70%;
   }
-}
-
-.order > * {
-  display: inline-block;
 }
 
 .right {
@@ -199,6 +224,7 @@ footer {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    margin: 1.2em;
   }
   .listings {
     display: -ms-inline-grid;
@@ -208,9 +234,20 @@ footer {
     -ms-grid-rows: auto auto;
         grid-template-rows: auto auto;
   }
+  .listings > .p {
+    padding: 0;
+  }
+  .bulk {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto auto auto;
+        grid-template-columns: auto auto auto;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+  }
   button {
     display: block;
-    margin: 0 auto;
+    margin: 1.2em auto;
   }
   .how_to {
     text-align: -webkit-center;
@@ -236,5 +273,13 @@ footer {
   }
   .order {
     width: 85%;
+  }
+  .bulk {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto auto auto;
+        grid-template-columns: auto auto auto;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
   }
 }
