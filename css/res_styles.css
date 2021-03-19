@@ -70,12 +70,11 @@ section > p > span {
 }
 
 .menu {
-  width: 200px;
+  width: 75%;
   border: 5px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 100px;
   overflow: hidden;
   position: relative;
   border-radius: 10px;
@@ -85,6 +84,7 @@ section > p > span {
           box-shadow: 3px 3px 5px 0px black;
   margin-bottom: 1em;
   line-height: 1;
+  background: cornflowerblue;
 }
 
 .order {
@@ -109,16 +109,19 @@ section > p > span {
   left: 100%;
 }
 
-.check > img {
+.menu > img {
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  position: relative;
+  position: absolute;
   top: 50%;
+  right: -150px;
+  overflow: hidden;
 }
 
-.check:hover > img {
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
+.menu:hover > img {
+  -webkit-transform: translateY(-50%) rotate(360deg);
+          transform: translateY(-50%) rotate(360deg);
+  right: 2px;
   -webkit-transition: 2s;
   transition: 2s;
 }
@@ -281,5 +284,11 @@ footer {
         grid-template-columns: auto auto auto;
     -ms-grid-rows: auto;
         grid-template-rows: auto;
+  }
+  .menu {
+    min-width: 200px;
+    max-width: 75%;
+    min-height: 75px;
+    max-height: 100px;
   }
 }
