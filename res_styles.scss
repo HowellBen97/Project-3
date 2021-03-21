@@ -55,7 +55,7 @@ section > p > span {
 }
 .menu {
   width: 75%;
-  border: 5px ;
+  border: 5px;
   display: flex;
   // height: 100px;
   overflow: hidden;
@@ -71,12 +71,12 @@ section > p > span {
   background: whitesmoke;
   width: 100%;
   word-wrap: break-word;
- > h4{
-   margin-bottom: 0.3em;
- }
- > p {
-   margin-top: 0.3em ;
- }
+  > h4 {
+    margin-bottom: 0.3em;
+  }
+  > p {
+    margin-top: 0.3em;
+  }
 }
 .check {
   background: rgb(188, 223, 253);
@@ -96,13 +96,13 @@ section > p > span {
 //   // transform: rotate(180deg);
 //   transition: 2s;
 // }
-.menu:hover > img{
+.menu:hover > img {
   transform: translateY(-50%) rotate(360deg);
   right: 2px;
   transition: 2s;
 }
 .menu:hover > .order {
-  width: 70%;
+  width: 85%;
   transition: 2s;
 }
 .menu:hover > .order > * {
@@ -172,21 +172,17 @@ footer {
     max-width: 15em;
   }
   .menu {
+    min-width: 225px;
+    max-width: 25%;
+    min-height: 100px;
+    margin: 1em;
+  }
+  .bulk {
     display: flex;
-    margin: 1.2em;
-  }
-  .listings {
-    display: inline-grid;
-    grid-template-columns: auto auto auto;
-    grid-template-rows: auto auto;
-    > .p{
-      padding: 0;
-    }
-  }
-  .bulk{
-    display: grid;
     grid-template-columns: auto auto auto;
     grid-template-rows: auto;
+    align-items: center;
+    margin: 0.5em;
   }
   button {
     display: block;
@@ -211,22 +207,22 @@ footer {
   }
 }
 @media screen and (min-width: 750px) and (max-width: 1200px) {
-  .listings {
-    margin-left: 1em;
+  .menu:hover > .order {
+    width: 80%;
+    transition: 2s;
   }
-  .order {
-    width: 85%;
-  }
-  .bulk{
-    display: grid;
+  .bulk {
+    display: flex;
     grid-template-columns: auto auto auto;
     grid-template-rows: auto;
+    align-items: center;
+    margin: 0.5em;
   }
-  .menu{
-    min-width: 200px;
-    max-width: 75%;
-    min-height: 75px;
-    max-height: 100px;
-
+  .menu {
+    min-width: 225px;
+    max-width: 35%;
+    min-height: 100px;
+    margin: 1em;
+    right: 40px;
   }
 }
