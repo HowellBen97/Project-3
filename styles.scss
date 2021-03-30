@@ -105,7 +105,7 @@ body {
 }
 .middle {
   padding-top: 2em;
-  padding-left: 2em;
+  padding-left: 1%;
   background-color: whitesmoke;
 }
 .rest {
@@ -189,8 +189,17 @@ a {
   padding: 0;
 }
 .heart_icon:hover {
-  fill: linear-gradient(175deg, #ff93e1, #9356dc);
-  transition: 1s all ease-in-out;
+  fill: $primary-color;
+  transition: 1s ease-in-out;
+  animation: fade_in;
+}
+@keyframes fade_in {
+  0% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: visible;
+  }
 }
 .footer_img {
   display: inline;
@@ -252,6 +261,7 @@ h2 {
   }
   .how_to {
     text-align: -webkit-center;
+    padding: 1em 0 1em 0;
   }
   h2 {
     text-align: center;
@@ -263,6 +273,10 @@ h2 {
   }
   .how_to {
     text-align: -webkit-center;
+    padding: 1em 0 1em 0;
+    > h2 {
+      text-align: center;
+    }
   }
   .how_to h4 {
     text-align: center;

@@ -45,11 +45,20 @@ body {
   width: 1.7em;
   position: absolute;
 }
+.title_right {
+  background-color: blue;
+}
 section > p > span {
   border-bottom: 0.2em solid lightblue;
 }
-.menu:nth-child(1) {
+.menu:nth-of-type(1) {
   animation: fade_in 1s;
+}
+.menu:nth-of-type(2) {
+  animation: fade_in 3s;
+}
+.menu:nth-of-type(3) {
+  animation: fade_in 5s;
 }
 @keyframes fade_in {
   0% {
@@ -72,13 +81,13 @@ section > p > span {
   padding-left: 1em;
 }
 .menu {
-  width: 75%;
+  width: 90%;
   border: 5px;
   display: flex;
   overflow: hidden;
   position: relative;
   border-radius: 10px;
-  margin-left: 5em;
+  margin-left: 1em;
   box-shadow: 3px 3px 5px 0px black;
   margin-bottom: 1em;
   line-height: 1;
@@ -89,15 +98,18 @@ section > p > span {
   background: white;
   width: 100%;
   word-wrap: break-word;
-  > h4 {
-    margin-bottom: 0.3em;
-    padding-left: 0.5em;
-  }
+  padding: 0.5em;
   > p {
-    margin-top: 0.3em;
-    padding-left: 0.5em;
     font-size: 0.95em;
+  }
+}
+.order_details {
+  > :nth-child(1) {
+    display: inline-block;
+  }
+  > :nth-child(2) {
     display: inline;
+    float: right;
   }
 }
 .order > p:nth-child(3) {
@@ -125,7 +137,7 @@ section > p > span {
   transition: 0.8s;
 }
 .menu:hover > .order {
-  width: 85%;
+  width: 80%;
   transition: 0.8s;
 }
 .menu:hover > .order > * {

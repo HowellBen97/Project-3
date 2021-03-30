@@ -129,7 +129,7 @@ body {
 
 .middle {
   padding-top: 2em;
-  padding-left: 2em;
+  padding-left: 1%;
   background-color: whitesmoke;
 }
 
@@ -229,9 +229,29 @@ a {
 }
 
 .heart_icon:hover {
-  fill: linear-gradient(175deg, #ff93e1, #9356dc);
-  -webkit-transition: 1s all ease-in-out;
-  transition: 1s all ease-in-out;
+  fill: #ff79da;
+  -webkit-transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
+  -webkit-animation: fade_in;
+          animation: fade_in;
+}
+
+@-webkit-keyframes fade_in {
+  0% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: visible;
+  }
+}
+
+@keyframes fade_in {
+  0% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: visible;
+  }
 }
 
 .footer_img {
@@ -302,6 +322,7 @@ h2 {
   }
   .how_to {
     text-align: -webkit-center;
+    padding: 1em 0 1em 0;
   }
   h2 {
     text-align: center;
@@ -314,6 +335,10 @@ h2 {
   }
   .how_to {
     text-align: -webkit-center;
+    padding: 1em 0 1em 0;
+  }
+  .how_to > h2 {
+    text-align: center;
   }
   .how_to h4 {
     text-align: center;
