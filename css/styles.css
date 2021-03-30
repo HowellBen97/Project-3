@@ -27,13 +27,13 @@
   position: fixed;
   visibility: hidden;
   z-index: 9999;
-  -webkit-animation: fade_out 4s;
-          animation: fade_out 4s;
+  -webkit-animation: fade_out 1.5s;
+          animation: fade_out 1.5s;
   padding-top: 5%;
 }
 
 body {
-  background-color: white;
+  background-color: whitesmoke;
   text-align: center;
   margin: 0%;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
@@ -45,7 +45,7 @@ body {
 }
 
 .location {
-  background-color: #bababa89;
+  background-color: lightgrey;
   width: 100%;
   padding-top: 0.5em;
   padding-bottom: 0.5em;
@@ -61,7 +61,7 @@ body {
 }
 
 .logo > img {
-  max-width: 11em;
+  max-width: 6em;
 }
 
 .booking {
@@ -79,15 +79,17 @@ body {
   background-image: linear-gradient(70deg, #ff79da, #9356dc);
   border: 1px solid transparent;
   color: white;
-  padding: 0.6em;
-  font-size: 1.1em;
+  padding: 0.9em;
+  font-size: 1em;
   cursor: pointer;
-  border-radius: 1em;
+  border-radius: 4em;
   max-width: 30em;
+  -webkit-box-shadow: 1px 4px 12px 1px lightgrey;
+          box-shadow: 1px 4px 12px 1px lightgrey;
 }
 
 .how_to {
-  background-color: whitesmoke;
+  background-color: white;
   margin-top: 1em;
 }
 
@@ -100,12 +102,14 @@ body {
   border-radius: 20px;
   font-size: 1em;
   width: 80%;
-  padding: 0.6em;
+  padding: 1em;
   margin: 1em 2em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-color: lightgray;
+  background-color: whitesmoke;
+  -webkit-box-shadow: 1px 4px 12px 1px lightgrey;
+          box-shadow: 1px 4px 12px 1px lightgrey;
 }
 
 .how_to img {
@@ -124,8 +128,9 @@ body {
 }
 
 .middle {
-  padding-top: 5em;
-  padding-left: 0.5em;
+  padding-top: 2em;
+  padding-left: 2em;
+  background-color: whitesmoke;
 }
 
 .rest {
@@ -161,7 +166,7 @@ body {
 
 .rest_caption {
   border-radius: 0 0 1em 1em;
-  background-color: #d3cfcf;
+  background-color: white;
   margin-top: -5%;
   padding-top: 0;
   width: calc(100%);
@@ -169,6 +174,8 @@ body {
   display: -ms-flexbox;
   display: flex;
   position: relative;
+  -webkit-box-shadow: 10px 10px 60px lightgrey;
+          box-shadow: 10px 10px 60px lightgrey;
 }
 
 .left {
@@ -176,14 +183,24 @@ body {
   text-align: left;
   padding-left: 1%;
   line-height: 0.8em;
+  background-color: white;
+  border-radius: 0 0 0 25px;
 }
 
 .left > h3 {
   padding-left: 0.5em;
+  text-decoration: none;
+  color: initial;
 }
 
 .left > p {
   padding-left: 0.5em;
+  text-decoration: none;
+  color: initial;
+}
+
+a {
+  text-decoration: none;
 }
 
 .right {
@@ -195,6 +212,7 @@ body {
   top: 50%;
   right: 0;
   padding-right: 1em;
+  background-color: white;
 }
 
 .right > img {
@@ -211,7 +229,7 @@ body {
 }
 
 .heart_icon:hover {
-  fill: #ff79da;
+  fill: linear-gradient(175deg, #ff93e1, #9356dc);
   -webkit-transition: 1s all ease-in-out;
   transition: 1s all ease-in-out;
 }
@@ -222,11 +240,12 @@ body {
 
 footer {
   background-color: #313131;
-  color: whitesmoke;
+  color: white;
   padding-bottom: 1em;
   text-align: left;
   padding-left: 1em;
   padding-top: 1em;
+  line-height: 0.2em;
 }
 
 .footer_list > li {
@@ -239,7 +258,7 @@ footer {
 }
 
 footer img {
-  max-width: 1em;
+  max-width: 0.7em;
 }
 
 .footer_img {
@@ -255,10 +274,6 @@ h2 {
   margin: 0em;
   text-align: left;
   padding-left: 1em;
-}
-
-footer > .logo {
-  padding-left: 0.5em;
 }
 
 .tablet-bottom {
@@ -277,7 +292,7 @@ footer > .logo {
             column-gap: 25px;
     row-gap: 15px;
   }
-  h2 {
+  .how_to h2 {
     text-align: center;
   }
   .how_to h4 {
@@ -287,6 +302,9 @@ footer > .logo {
   }
   .how_to {
     text-align: -webkit-center;
+  }
+  h2 {
+    text-align: center;
   }
 }
 

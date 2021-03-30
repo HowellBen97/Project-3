@@ -3,23 +3,22 @@ $background-2: rgb(211, 207, 207);
 .center {
   text-align: center;
 }
-@keyframes fade_out{
-  0%{
+@keyframes fade_out {
+  0% {
     visibility: visible;
   }
-  100%{
+  100% {
     visibility: hidden;
-
   }
 }
-.loading_icon{
+.loading_icon {
   width: 100%;
   height: 100%;
   background: whitesmoke;
   position: fixed;
   visibility: hidden;
   z-index: 9999;
-  animation: fade_out 4s;
+  animation: fade_out 1.5s;
   padding-top: 5%;
 }
 // .loading_icon > img{
@@ -28,7 +27,7 @@ $background-2: rgb(211, 207, 207);
 
 // }
 body {
-  background-color: white;
+  background-color: whitesmoke;
   text-align: center;
   margin: 0%;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
@@ -39,7 +38,7 @@ body {
   margin-bottom: 0.5em;
 }
 .location {
-  background-color: #bababa89;
+  background-color: lightgrey;
   width: 100%;
   padding-top: 0.5em;
   padding-bottom: 0.5em;
@@ -52,7 +51,7 @@ body {
   max-width: 0.7em;
 }
 .logo > img {
-  max-width: 11em;
+  max-width: 6em;
 }
 .booking {
   background-color: whitesmoke;
@@ -67,14 +66,15 @@ body {
   background-image: linear-gradient(70deg, #ff79da, #9356dc);
   border: 1px solid transparent;
   color: white;
-  padding: 0.6em;
-  font-size: 1.1em;
+  padding: 0.9em;
+  font-size: 1em;
   cursor: pointer;
-  border-radius: 1em;
+  border-radius: 4em;
   max-width: 30em;
+  box-shadow: 1px 4px 12px 1px lightgrey;
 }
 .how_to {
-  background-color: whitesmoke;
+  background-color: white;
   margin-top: 1em;
 }
 .how_to h2 {
@@ -85,10 +85,11 @@ body {
   border-radius: 20px;
   font-size: 1em;
   width: 80%;
-  padding: 0.6em;
+  padding: 1em;
   margin: 1em 2em;
   display: flex;
-  background-color: lightgray;
+  background-color: whitesmoke;
+  box-shadow: 1px 4px 12px 1px lightgrey;
 }
 .how_to img {
   max-width: 0.75em;
@@ -103,8 +104,9 @@ body {
   width: 25px;
 }
 .middle {
-  padding-top: 5em;
-  padding-left: 0.5em;
+  padding-top: 2em;
+  padding-left: 2em;
+  background-color: whitesmoke;
 }
 .rest {
   background-size: cover;
@@ -134,26 +136,36 @@ body {
 }
 .rest_caption {
   border-radius: 0 0 1em 1em;
-  background-color: $background-2;
+  background-color: white;
   margin-top: -5%;
   padding-top: 0;
   width: calc(100%);
   display: flex;
   position: relative;
+  box-shadow: 10px 10px 60px lightgrey;
 }
 .left {
   width: 70%;
   text-align: left;
   padding-left: 1%;
   line-height: 0.8em;
+  background-color: white;
+  border-radius: 0 0 0 25px;
 }
 .left {
   > h3 {
     padding-left: 0.5em;
+    text-decoration: none;
+    color: initial;
   }
   > p {
     padding-left: 0.5em;
+    text-decoration: none;
+    color: initial;
   }
+}
+a {
+  text-decoration: none;
 }
 .right {
   width: 15%;
@@ -163,6 +175,7 @@ body {
   top: 50%;
   right: 0;
   padding-right: 1em;
+  background-color: white;
 }
 .right > img {
   max-width: 2em;
@@ -176,19 +189,20 @@ body {
   padding: 0;
 }
 .heart_icon:hover {
-  fill: $primary-color;
+  fill: linear-gradient(175deg, #ff93e1, #9356dc);
   transition: 1s all ease-in-out;
 }
 .footer_img {
   display: inline;
 }
 footer {
-  background-color: rgb(49, 49, 49);
-  color: whitesmoke;
+  background-color: #313131;
+  color: white;
   padding-bottom: 1em;
   text-align: left;
   padding-left: 1em;
   padding-top: 1em;
+  line-height: 0.2em;
 }
 .footer_list > li {
   list-style: none;
@@ -198,7 +212,7 @@ footer {
   padding-left: 0;
 }
 footer img {
-  max-width: 1em;
+  max-width: 0.7em;
 }
 .footer_img {
   padding: 0;
@@ -212,9 +226,9 @@ h2 {
   text-align: left;
   padding-left: 1em;
 }
-footer > .logo {
-  padding-left: 0.5em;
-}
+// footer > .logo {
+//   padding-left: 0.5em;
+// }
 .tablet-bottom {
   display: none;
 }
@@ -228,7 +242,7 @@ footer > .logo {
     column-gap: 25px;
     row-gap: 15px;
   }
-  h2 {
+  .how_to h2 {
     text-align: center;
   }
   .how_to h4 {
@@ -238,6 +252,9 @@ footer > .logo {
   }
   .how_to {
     text-align: -webkit-center;
+  }
+  h2 {
+    text-align: center;
   }
 }
 @media screen and (min-width: 750px) and (max-width: 1200px) {
