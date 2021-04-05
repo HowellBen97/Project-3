@@ -85,12 +85,12 @@ section > p > span {
 
 @-webkit-keyframes fade_in {
   0% {
-    opacity: 0;
+    opacity: 1;
     -webkit-transform: translateY(100%);
             transform: translateY(100%);
   }
   50% {
-    opacity: 1;
+    opacity: 0;
     -webkit-transform: translateY(0%);
             transform: translateY(0%);
     visibility: visible;
@@ -103,12 +103,12 @@ section > p > span {
 
 @keyframes fade_in {
   0% {
-    opacity: 0;
+    opacity: 1;
     -webkit-transform: translateY(100%);
             transform: translateY(100%);
   }
   50% {
-    opacity: 1;
+    opacity: 0;
     -webkit-transform: translateY(0%);
             transform: translateY(0%);
     visibility: visible;
@@ -150,7 +150,11 @@ section > p > span {
 }
 
 .order > p {
-  font-size: 0.95em;
+  font-size: 0.85em;
+}
+
+.order > h4 {
+  margin: 0em;
 }
 
 .order_details > :nth-child(1) {
@@ -160,6 +164,10 @@ section > p > span {
 .order_details > :nth-child(2) {
   display: inline;
   float: right;
+}
+
+.order_details > p {
+  font-size: 0.95em;
 }
 
 .order > p:nth-child(3) {
@@ -298,8 +306,12 @@ footer {
   .menu {
     min-width: 225px;
     max-width: 25%;
-    min-height: 100px;
     margin: 1em;
+  }
+  .menu:hover > .order {
+    width: 82%;
+    -webkit-transition: 0.8s;
+    transition: 0.8s;
   }
   .bulk {
     display: -webkit-box;
@@ -313,6 +325,15 @@ footer {
         -ms-flex-align: center;
             align-items: center;
     margin: 0.5em;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .order > h4 {
+    font-size: 0.9em;
+  }
+  .order_details > p {
+    font-size: 0.8em;
   }
   button {
     display: block;
@@ -336,11 +357,17 @@ footer {
   }
 }
 
-@media screen and (min-width: 750px) and (max-width: 1200px) {
+@media screen and (min-width: 775px) and (max-width: 1200px) {
+  .order_details > p {
+    font-size: 0.7em;
+  }
+  .order > h4 {
+    font-size: 0.8em;
+  }
   .menu:hover > .order {
     width: 80%;
-    -webkit-transition: 2s;
-    transition: 2s;
+    -webkit-transition: 0.8s;
+    transition: 0.8s;
   }
   .bulk {
     display: -webkit-box;
@@ -358,8 +385,6 @@ footer {
   .menu {
     min-width: 225px;
     max-width: 35%;
-    min-height: 100px;
     margin: 1em;
-    right: 40px;
   }
 }
