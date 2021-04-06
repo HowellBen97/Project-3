@@ -89,9 +89,23 @@ body {
           box-shadow: 1px 4px 12px 1px lightgrey;
 }
 
+.button_icon {
+  max-width: 10px;
+  margin-right: 1em;
+}
+
 .how_to {
   background-color: white;
   margin-top: 1em;
+}
+
+.how_to > div:hover svg > path {
+  fill: #ff79da;
+}
+
+.how_to > div:hover > h4 {
+  -webkit-box-shadow: 1px 1px 1px black;
+          box-shadow: 1px 1px 1px black;
 }
 
 .how_to h2 {
@@ -175,8 +189,8 @@ body {
   display: -ms-flexbox;
   display: flex;
   position: relative;
-  -webkit-box-shadow: 10px 10px 60px lightgrey;
-          box-shadow: 10px 10px 60px lightgrey;
+  -webkit-box-shadow: 10px 10px 10px lightgrey;
+          box-shadow: 10px 10px 10px lightgrey;
 }
 
 .left {
