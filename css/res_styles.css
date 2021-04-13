@@ -69,53 +69,53 @@ section > p > span {
 }
 
 .menu:nth-of-type(1) {
-  -webkit-animation: fade_in 1s;
-          animation: fade_in 1s;
+  -webkit-animation: load_in 1.5s;
+          animation: load_in 1.5s;
 }
 
 .menu:nth-of-type(2) {
-  -webkit-animation: fade_in 3s;
-          animation: fade_in 3s;
+  -webkit-animation: load_in 2s;
+          animation: load_in 2s;
 }
 
 .menu:nth-of-type(3) {
-  -webkit-animation: fade_in 5s;
-          animation: fade_in 5s;
+  -webkit-animation: load_in 2.5s;
+          animation: load_in 2.5s;
 }
 
-@-webkit-keyframes fade_in {
+@-webkit-keyframes load_in {
   0% {
-    opacity: 1;
+    opacity: 0;
     -webkit-transform: translateY(100%);
             transform: translateY(100%);
   }
   50% {
-    opacity: 0;
+    opacity: 1;
     -webkit-transform: translateY(0%);
             transform: translateY(0%);
-    visibility: visible;
   }
   100% {
     -webkit-animation-play-state: paused;
             animation-play-state: paused;
+    opacity: 1;
   }
 }
 
-@keyframes fade_in {
+@keyframes load_in {
   0% {
-    opacity: 1;
+    opacity: 0;
     -webkit-transform: translateY(100%);
             transform: translateY(100%);
   }
   50% {
-    opacity: 0;
+    opacity: 1;
     -webkit-transform: translateY(0%);
             transform: translateY(0%);
-    visibility: visible;
   }
   100% {
     -webkit-animation-play-state: paused;
             animation-play-state: paused;
+    opacity: 1;
   }
 }
 
